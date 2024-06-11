@@ -24,10 +24,13 @@
 
     body {
       font-family: "Roboto";
+      overflow-x: hidden;
     }
 
     h1 {
       color: white;
+      font-family: "Super Brain";
+      font-size: 36px;
     }
 
     .nav-item {
@@ -46,10 +49,25 @@
       border: 2px solid #a289da;
     }
 
-    .parte-artistas-evidencia {
+    .parte-artistas {
       background-color: #40226e;
-      height: 1050px;
+      height: 850px;
     }
+
+    .parte-albuns {
+      background-color: #1e063e;
+      height: 400px;
+    }
+    .parte-comentarios-galera {
+      background-color:  #40226e;
+      height: 450px;
+    }
+    footer{
+      background-color: black;
+      height: 500px;
+      color: white;
+    }
+
   </style>
   <title>OnBeat-Home</title>
 </head>
@@ -123,9 +141,11 @@
     <br>
     <br>
     <center>
-      <h1 style="font-size: 50px;">---------------------------------- Explore Comunidades
-        ----------------------------------</h1>
-      <h5>Encontre a comunidade de seus artistas favoritos</h5>
+      <h1 style="font-size: 50px;"><span style="font-size: 30px;">---------------------------------------</span>
+        Explore Comunidades
+        <span style="font-size: 30px;">-----------------------------------</span>
+      </h1>
+      <h5 style="margin-top: 20px;">Encontre a comunidade de seus artistas favoritos</h5>
       <br>
       <br>
       <div>
@@ -136,20 +156,54 @@
   background-repeat: no-repeat;">
       </div>
   </div>
-  <div class="parte-artistas-evidencia">
-    <h1 style="font-size: 50px;padding-top: 30px;">----------------------------------- Artistas em Evidência
-      ----------------------------------</h1>
-    <img src="/Arquivos/Artistas-em-evidencia.PNG" style="margin-top: 10px;margin-left: 665px;">
-    <br>
-    <br>
-    <button type="button" class="btn btn-primary btn-lg"
-      style="margin-left: 740px;padding-top: 3px; background-color: #a289da;border-radius: 5px;font-weight: bold;">
-      <font style="vertical-align: inherit;">
-        <font style="vertical-align: inherit;">Torne-se um artista em evidência também </font>
-      </font>
-    </button>
-    <h1 style="font-size: 50px;padding-top: 30px;">-------------------------------------- Artistas em Alta
-      -------------------------------------</h1>
+  <div class="parte-artistas">
+    <div class="parte-artistas-em-evidencia">
+      <h1 style="font-size: 50px;padding-top: 30px;"><span
+          style="font-size: 30px;">-------------------------------------</span>
+        Artistas em evidência
+        <span style="font-size: 30px;">----------------------------------</span>
+      </h1>
+      <img src="/Arquivos/Artistas-em-evidencia.PNG" style="margin-top: 10px;margin-left: 650px;">
+      <br>
+      <br>
+      <button type="button" class="btn btn-primary btn-lg"
+        style="margin-left: 720px;margin-top:-20px;padding-top: 3px; background-color: #a289da;border-radius: 5px;font-weight: bold;">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">Torne-se um artista em evidência também </font>
+        </font>
+      </button>
+    </div>
+    <div class="parte-artistas-em-alta">
+      <h1 style="font-size: 50px;padding-top: 30px;">
+        <span style="font-size: 30px;">------------------------------------------</span>
+        Artistas em Alta
+        <span style="font-size: 30px;">---------------------------------------</span>
+      </h1>
+      <img src="/Arquivos/Artistas-em-alta.PNG" style="margin-top: 40px;margin-left: 500px;">
+    </div>
+  </div>
+  <div class="parte-albuns">
+    <h1 style="font-size: 50px;padding-top: 30px;">
+      <span style="font-size: 30px;">--------------------------------------------</span>
+      Álbuns em Alta
+      <span style="font-size: 30px;">-----------------------------------------</span>
+    </h1>
+    <img src="/Arquivos/Albuns-em-alta.PNG" style="margin-top: 40px;margin-left: 500px;">
+  </div>
+  <div class="parte-comentarios-galera">
+    <h1 style="font-size: 50px;padding-top: 30px;">
+      <span style="font-size: 30px;">--------------------------------------</span>
+      Comentários da Galera
+      <span style="font-size: 30px;">-------------------------------</span>
+    </h1>
+    <img src="/Arquivos/Comentarios-da-galera.PNG" style="margin-top: 40px;margin-left: 400px;">
+  </div>
+  <div class="footer">
+    <footer>
+      <img src="/Arquivos/On_Beat_Logo2_PNG.png" style="margin-left: 600px;margin-top: 30px; height: 350px;width: auto;">
+<img
+  src="data:image/png;base64,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">
+    </footer>
   </div>
   </center>
 </body>
