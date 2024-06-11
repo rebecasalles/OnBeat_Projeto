@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link javascript src="script.js">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <style>
+    @font-face {
+      font-family: "Roboto";
+      src: url("/Fontes/roboto/Roboto-Medium.ttf");
+    }
+
+    @font-face {
+      font-family: "Sunny Spells";
+      src: url("/Fontes/Sunny Spells Basic.ttf");
+    }
+
+    @font-face {
+      font-family: "Super Brain";
+      src: url("/Fontes/Super Brain.ttf");
+    }
+
+    body {
+      font-family: "Roboto";
+    }
+
+    h1 {
+      color: white;
+    }
+
+    .nav-item {
+      font-family: 'Sunny Spells';
+      font-size: 35px;
+      margin-left: 10px;
+    }
+
+    .parte-explorar {
+      background-color: #1e063e;
+      height: 300px;
+      color: white;
+    }
+
+    #inputLarge :focus {
+      border: 2px solid #a289da;
+    }
+
+    .parte-artistas-evidencia {
+      background-color: #40226e;
+      height: 1050px;
+    }
+  </style>
+  <title>OnBeat-Home</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="background-color:#A289DA; ">
+    <div class="container-fluid" style="background-color:#A289DA; height: 60px ; font-family: 'Sunny Spells';">
+      <a class="navbar-brand" href="#">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;margin-left: 50px;margin-bottom: 100px;"><img
+              src="/Arquivos/OnBeat_Logo1_Menor.png" style="margin-top: 0px;"></font>
+        </font>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+        aria-controls="navbarColor01" aria-expanded="false" aria-label="Alternar de navegação"
+        background-color="#A289DA">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01"
+        style="font: 30px bolder; margin-left:900px;color: #593196;">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;font-weight: extrabold;color: #593196;">Início
+                </font>
+              </font><span class="visually-hidden">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;font-weight: exbold;">(atual)</font>
+                </font>
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Músicas</font>
+              </font>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Podcasts</font>
+              </font>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Artistas</font>
+              </font>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Comunidades</font>
+              </font>
+            </a>
+          </li>
+        </ul>
+        <form class="d-flex" style="margin-right: 100px;">
+          <img style="margin-bottom: 0px;"
+            src="data:image/png;base64,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" />
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="parte-explorar">
+    <br>
+    <br>
+    <center>
+      <h1 style="font-size: 50px;">---------------------------------- Explore Comunidades
+        ----------------------------------</h1>
+      <h5>Encontre a comunidade de seus artistas favoritos</h5>
+      <br>
+      <br>
+      <div>
+        <input class="form-control form-control-lg" type="text" placeholder="Digite o nome do seu artista favorito"
+          id="inputLarge" style="width: 900px;border-radius: 20px;  background-color: white;
+  background-image: url('data:image/png;base64,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') ;
+  background-position: 820px 0px; 
+  background-repeat: no-repeat;">
+      </div>
+  </div>
+  <div class="parte-artistas-evidencia">
+    <h1 style="font-size: 50px;padding-top: 30px;">----------------------------------- Artistas em Evidência
+      ----------------------------------</h1>
+    <img src="/Arquivos/Artistas-em-evidencia.PNG" style="margin-top: 10px;margin-left: 665px;">
+    <br>
+    <br>
+    <button type="button" class="btn btn-primary btn-lg"
+      style="margin-left: 740px;padding-top: 3px; background-color: #a289da;border-radius: 5px;font-weight: bold;">
+      <font style="vertical-align: inherit;">
+        <font style="vertical-align: inherit;">Torne-se um artista em evidência também </font>
+      </font>
+    </button>
+    <h1 style="font-size: 50px;padding-top: 30px;">-------------------------------------- Artistas em Alta
+      -------------------------------------</h1>
+  </div>
+  </center>
+</body>
+
+</html>
