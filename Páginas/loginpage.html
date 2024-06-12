@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link javascript src="script.js">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        @font-face {
+            font-family: "Roboto";
+            src: url("/Fontes/roboto/Roboto-Medium.ttf");
+        }
+
+        @font-face {
+            font-family: "Sunny Spells";
+            src: url("/Fontes/Sunny Spells Basic.ttf");
+        }
+
+        @font-face {
+            font-family: "Super Brain";
+            src: url("/Fontes/Super Brain.ttf");
+        }
+
+        body {
+            font-family: "Roboto";
+            overflow-x: hidden;
+        }
+
+        h1 {
+            color: white;
+            font-family: "Super Brain";
+            font-size: 36px;
+        }
+
+        .nav-item {
+            font-family: 'Sunny Spells';
+            font-size: 35px;
+            margin-left: 10px;
+        }
+
+        .parte-explorar {
+            background-color: #1e063e;
+            height: 300px;
+            color: white;
+        }
+
+        #inputLarge :focus {
+            border: 2px solid #a289da;
+        }
+
+        .parte-artistas {
+            background-color: #40226e;
+            height: 850px;
+        }
+
+        .parte-albuns {
+            background-color: #1e063e;
+            height: 400px;
+        }
+
+        .parte-comentarios-galera {
+            background-color: #40226e;
+            height: 450px;
+        }
+
+        footer {
+            background-color: black;
+            height: 400px;
+            color: white;
+        }
+    </style>
+    <title>OnBeat-Home</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="background-color:#A289DA; ">
+        <div class="container-fluid" style="background-color:#A289DA; height: 60px ; font-family: 'Sunny Spells';">
+            <a class="navbar-brand" href="#">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;margin-left: 50px;margin-bottom: 100px;"><img
+                            src="/Arquivos/OnBeat_Logo1_Menor.png" style="margin-top: 0px;"></font>
+                </font>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Alternar de navegação"
+                background-color="#A289DA">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01"
+                style="font: 30px bolder; margin-left:900px;color: #593196;">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;font-weight: extrabold;color: #593196;">Início
+                                    </font>
+                                </a>
+                            </font><span class="visually-hidden">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;font-weight: exbold;">(atual)</font>
+                                </font>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Músicas</font>
+                            </font>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Podcasts</font>
+                            </font>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Artistas</font>
+                            </font>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Comunidades</font>
+                            </font>
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex" style="margin-right: 100px;">
+                    <a href="loginpage.html"><img style="margin-bottom: 0px;"
+                            src="data:image/png;base64,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" />
+                    </a>
+                </form>
+            </div>
+        </div>
+    </nav>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+</body>
+
+</html>
