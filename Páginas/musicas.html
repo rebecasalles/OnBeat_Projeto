@@ -40,10 +40,18 @@
       margin-left: 10px;
     }
 
-    .parte-explorar {
+    .parte-posts-musicas {
       background-color: #1e063e;
-      height: 300px;
+      height: 900px;
       color: white;
+      margin-top: -50px;
+    }
+
+    .post {
+      height: 300px;
+      background-color: #e3e3ff;
+      width: 40%;
+      margin-top: 60px;
     }
 
     #inputLarge :focus {
@@ -133,92 +141,26 @@
           </li>
         </ul>
         <form class="d-flex" style="margin-right: 100px;">
-          <a href="loginpage.html"> <img style="margin-bottom: 0px;" 
+          <a href="loginpage.html"> <img style="margin-bottom: 0px;"
               src="data:image/png;base64,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">
           </a>
         </form>
       </div>
     </div>
   </nav>
-  <div class="parte-explorar">
-    <br>
-    <br>
+  <div class="parte-posts-musicas">
     <center>
-      <h1 style="font-size: 50px;"><span style="font-size: 30px;">---------------------------------------</span>
-        Explore Comunidades
-        <span style="font-size: 30px;">-----------------------------------</span>
-      </h1>
-      <h5 style="margin-top: 20px;">Encontre a comunidade de seus artistas favoritos</h5>
       <br>
-      <br>
-      <div>
-        <input class="form-control form-control-lg" type="text" placeholder="Digite o nome do seu artista favorito"
-          id="inputLarge" style="width: 900px;border-radius: 20px;  background-color: white;
-  background-image: url('data:image/png;base64,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') ;
-  background-position: 820px 0px; 
-  background-repeat: no-repeat;">
+      <div class="post" id="post1">
+        <img class="foto-de-perfil" style="margin: 10px 625px 0px 0px;display: inline;"
+          src="data:image/png;base64,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">
+        <h2 style="position: absolute;top: 152px;left: 670px;color:#40226e;font-weight: 600;">OnBeat Fan</h2>
+        <img style="position: absolute;top: 155px;left: 840px;color:#40226e;font-weight: 600;"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAitJREFUWEft1j2L1FAUBuD3XRd/gaDlZjoLmcrWjI3aC4qFIrtWgwmsTmOnnbggS+7CNrKKWKxgr1glYzuVxaLNncHWfyBjjmRwxIxJ7sd8MIXTJvfcJ+85NxNizX5cMw/WG9TZ6p4Tbj4jcAXEWdv0BHLCnA/TUfLBdk3dfaWEOkF0DPKmb1EBtjOdvPRdX6wrg1rxdwBnfAtK8QPu9ofqtW+NWZD4FpqumxdlAxqLyHuCX0E5D8E1kKdMcN/2mUDjn2Npf/qmTqaAy0HUFnIAYHMZKBPoONXJrdmNO0H8DsR1E6i47pqUCfQ01cmjCtAeiJ4NyBVlAlUmFAbxWxI3bEEuqEaQAD+Y5+10dPBluvml1v0LxMaAwGkXkC3KlFBRx+uU1WFNM2UDcg2i8X7Te2rloEnrGt7oJVAYRDnJlX0B5CJX+0P18e9IZ0GaZLDQHjU3cJBqdbEW1AniHoi9VYFE8DkbJu1aUPHvH25FL7jB7ZWgJL+dDg/eNIEmnyRhEL0ieWdZqMlQE/f6Wh3N7lE3wEtF5ZCdKswkjYYUloISSDfT6rBuX9MRXzBKdlOt9ptGwQRa4EyZMaaWlYZ/zkF/nOrkic0hsUloWse3fZXfVL4z9M+pdEtK9lOtdm2S+fPULjf/vtcqKYEcZlp1Xeu7tMx6pnwxLkNd9aCVSUkuR9lI7bgmM0/LSnuFrfgBBD1QxgSem94zJqhvy0x1va//B5miW7uEfgHysQI0QlyQywAAAABJRU5ErkJggg==">
       </div>
+    </center>
   </div>
-  <div class="parte-artistas">
-    <div class="parte-artistas-em-evidencia">
-      <h1 style="font-size: 50px;padding-top: 30px;"><span
-          style="font-size: 30px;">-------------------------------------</span>
-        Artistas em evidência
-        <span style="font-size: 30px;">----------------------------------</span>
-      </h1>
-      <img src="/Arquivos/Artistas-em-evidencia.PNG" style="margin-top: 10px;margin-left: 650px;">
-      <br>
-      <br>
-      <button type="button" class="btn btn-primary btn-lg"
-        style="margin-left: 720px;margin-top:-20px;padding-top: 3px; background-color: #a289da;border-radius: 5px;font-weight: bold;">
-        <font style="vertical-align: inherit;">
-          <font style="vertical-align: inherit;">Torne-se um artista em evidência também </font>
-        </font>
-      </button>
-    </div>
-    <div class="parte-artistas-em-alta">
-      <h1 style="font-size: 50px;padding-top: 30px;">
-        <span style="font-size: 30px;">------------------------------------------</span>
-        Artistas em Alta
-        <span style="font-size: 30px;">---------------------------------------</span>
-      </h1>
-      <img src="/Arquivos/Artistas-em-alta.PNG" style="margin-top: 40px;margin-left: 500px;">
-    </div>
-  </div>
-  <div class="parte-albuns">
-    <h1 style="font-size: 50px;padding-top: 30px;">
-      <span style="font-size: 30px;">--------------------------------------------</span>
-      Álbuns em Alta
-      <span style="font-size: 30px;">-----------------------------------------</span>
-    </h1>
-    <img src="/Arquivos/Albuns-em-alta.PNG" style="margin-top: 40px;margin-left: 500px;">
-  </div>
-  <div class="parte-comentarios-galera">
-    <h1 style="font-size: 50px;padding-top: 30px;">
-      <span style="font-size: 30px;">--------------------------------------</span>
-      Comentários da Galera
-      <span style="font-size: 30px;">-------------------------------</span>
-    </h1>
-    <img src="/Arquivos/Comentarios-da-galera.PNG" style="margin-top: 40px;margin-left: 400px;">
-  </div>
-  <div class="footer">
-    <footer>
-      <img src="/Arquivos/On_Beat_Logo2_PNG.png"
-        style="margin-left: 600px;margin-top: 20px; height: 350px;width: auto;"> <img
-        src="/Arquivos/Patreon-suporte.png"
-        style="margin: 180px 0px 0px -20px;height: 100px;width: auto;position: absolute;">
-      <a href="https//www.instagram.com/onbeat"><img style="margin-left: 90px;margin-top: -50px;"
-          href="https//www.instagram.com/onbeat"
-          src="data:image/png;base64,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">
-      </a>
-      <img style="margin-left: 30px;margin-top: -50px;"
-        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAA65JREFUaEPtmV+oVUUUxn9fgphaEEhpIoaKZgaGD0oYpPgHC8vQCCWxIkFBEBRBoYckSepB9MEHo3pQSLA0KzQQREWKKBG0SNBEn9QsXwS1P0bLvWAO3K7n7NmzZ1/jwhm43IdZ65vvmzV7zVpzRD8f6uf86Qr4vyPYjUA3Apk70D1CKRtoZiOBdcAkYCIwDPgZOA58IulkCp7bdoyAmU2QdDYVsJO9mc0pSO8BHirB/AJYIem3lo2ZrQCek/RSO78yAZ8CgyXNzxVhZquK3d5eEecSsB+YUvyfDAwB5kg6XFmAmT0IXA8OX3ZSX4WQmTmJU1VsO9iskbTN58zMN/RWT7u2ETCzqUXYvu9h+LmkRXVImNmZcN5T3Z3oZuAqMNP5S1raG6STACe7t5fxD8CylO/CzPzc+nHIHT8B0yT9UVXAs8CxNqv+DbwDvC/pnxgrM3sPWB+zi8x7lpoh6VrKNzAWOF8CfDpE48eyxc3MN8E3o+74Dpgr6UYngLIs5MqfiKzs+XsfsLvdDpmZh/7JuuyBeZIOlfmXCXgeOJiw+DfhUvLIOfFfgB2eAhMwepvOknSkloCQtj4DXs4gkOs6VdKJZAFmNh0YAxwAPgIW5jKp6f+opCt1BPgt2KpLzhVnfHxNAjluNyQ9EAPodA8MBP6KOffx/LdF+fBMbI2yj9gvoLYFVAy0oXm/azbEsMoE+LHxMmBADKSP5mdKaneZ/me50obGzN4urDf2EcEy2N8lPVxl3WhHZmbLgQ+KEuK+KoAN2Wwpbl9vfKIjKiDcB16dri4up1ejiM0YjJF0sQpUVICZeSaYHcC8DXylCnCGzR5Ji6v6VxEwuijcLtyjI/Sv118pJXtUQDhCu4ElVXclw26rpLUp/lUFeEbwDu2xFPBEW39AeKrI/X+m+FUSEKLg5D0v+5Fqeni9P0WSV7BJo7KAFqqZvQG8DowqyuXhRXd2f9KK7Y0XSPqqDk6ygB5CnPxO75jqLBx8bnu5IunruhjJAsKTy5uhNx5ad2HgZlHxviDpaAZG9R84zGxeKO5eAwblLAp4ib5QkretWeOuCIQnwBcBf4F4pCgjRgBPN3TWnexmSW9lse7h3KkfcNKbAD8qTQx/z/kYeFfSr00AtjBi1ai/Hnsxt7Jm+vTmfhfwoaTWU2WT/JO+AU+bj4enFu8VxgETgjB/kL0cXiK8FfW/E73fMRtlHsCSs1BfkMjB7ArI2b0mfLsRaGIXczC6EcjZvSZ8+30E7gDTC/YxA8JcdAAAAABJRU5ErkJggg==">
-      <h6 style="text-align: center;font-size: 14px;margin-top: -25px;">Direitos autorais (c) OnBeat de 2024. Todos os
-        direitos reservados. Este produto é protegido por direitos autorais e
-        distribuído sob licenças que restringem cópia, distribuição e descompilação.</h6>
-    </footer>
-  </div>
-  </center>
+
 </body>
 
 </html>
