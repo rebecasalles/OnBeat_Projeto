@@ -9,6 +9,9 @@
     <link rel="shortcut icon" href="/Arquivos/favicon_io (3)/favicon.ico" type="image/x-icon">
 
     <style>
+        body{
+            overflow-y: hidden;
+        }
         @font-face {
             font-family: "Roboto";
             src: url("/Fontes/roboto/Roboto-Medium.ttf");
@@ -78,10 +81,9 @@
             top: 120px;
             color: black;
             background-color: #e3e3ff;
-            height: 10px;
         }
     </style>
-    <title>OnBeat-Login</title>
+    <title>OnBeat-Home</title>
 </head>
 
 <body>
@@ -102,10 +104,16 @@
                 style="font: 30px bolder; margin-left:900px;color: #593196;">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link active" href="index.html">
                             <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;">Início</font>
+                                <font style="vertical-align: inherit;font-weight: extrabold;color: #593196;">Início
+                                </font>
+                        </a>
+                        </font><span class="visually-hidden">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;font-weight: exbold;">(atual)</font>
                             </font>
+                        </span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -146,23 +154,23 @@
         </div>
     </nav>
     <div class="parte-login">
-        <div class="card text-white bg-primary mb-3" style="max-width: 37rem;color: black;width: 600px;">
+        <div class="card text-white bg-primary mb-3" style="height: 300px;max-width: 37rem;color: black;width: 900px;border:none;background-color: #e3e3ff;">
             <div class="card-header" style="background-color:#a289da ;">
                 <font style="vertical-align: inherit;">
-                    <font style="vertical-align: inherit;">Login</font>
+                    <font style="vertical-align: inherit;">Registrar</font>
                 </font>
             </div>
-            <div class="card-body" style="background-color: #e3e3ff;border-radius: 0px 0px 10px 10px;">
+            <div class="card-body" style="background-color: #e3e3ff;height: 637px;border-radius: 0px 0px 10px 10px;">
                 <center>
                     <h4 class="card-title" style="color: black;">
                         <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;"><b>Faça seu login</b></font>
+                            <font style="vertical-align: inherit;"><b>Faça sua conta</b></font>
                         </font>
                     </h4>
                     <p class="card-text">
                 </center>
                 <div>
-                    <label for="exampleInputEmail1" class="form-label mt-4" style="margin-top: -200px;">
+                    <label for="exampleInputEmail1" class="form-label mt-4" style="margin-top: -10px;">
                         <font style="vertical-align: inherit;">
                             <font style="vertical-align: inherit;align-self: left;color: black;">Endereço de email
                             </font>
@@ -171,12 +179,6 @@
                     <center>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                             placeholder="Digite o e-mail">
-                        <small id="emailHelp" class="form-text text-muted">
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;font-size: 10px;">Nunca compartilharemos seu e-mail
-                                    com mais ninguém.</font>
-                            </font>
-                        </small>
                 </div>
                 </center>
                 <div style="margin-top: -20px;">
@@ -191,25 +193,76 @@
                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha"
                             autocomplete="off">
                 </div>
+                </center>
+                <div style="margin-top: -20px;">
+                    <label for="exampleData1" class="form-label mt-4">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;align-self: left;color: black;">Data de nascimento
+                            </font>
+                        </font>
+                    </label>
+                    <center>
+                        <div></div>
+                        <input type="date" class="form-control" id="exampleInputdata1" placeholder="Data de nascimento"
+                            autocomplete="off">
+                </div>
+                <div style="margin-top: -20px;">
+                    <label for="exampleData1" class="form-label mt-4">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;align-self: left;color: black;">Idioma
+                            </font>
+                        </font>
+                    </label>
+                    <select class="form-select" id="exampleSelect1">
+                        <option>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Selecione um idioma</font>
+                            </font>
+                        </option>
+                        <option>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Português</font>
+                            </font>
+                        </option>
+                        <option>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Inglês</font>
+                            </font>
+                        </option>
+                    </select>
+                </div>
+                </center>
+                <div style="margin-top: -20px;">
+                    <label for="exampleusername1" class="form-label mt-4">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;align-self: left;color: black;">Nome Completo:
+                            </font>
+                        </font>
+                    </label>
+                    <center>
+                        <div></div>
+                        <input type="text" class="form-control" id="exampleInputname1" placeholder="Nome Completo"
+                            autocomplete="off">
+                </div>
+                </center>
                 <center>
                     <button type="button" class="btn btn-primary" style="width: 100px;margin-top:20px;">
                         <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Login</font>
+                            <font style="vertical-align: inherit;">Registrar</font>
                         </font>
                     </button><br>
-                    <br>
                     <h4 class="card-title-2" style="color: black; font-size:20px;">
                         <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;"><b>Ou prossiga com:</b></font>
+                            <font style="vertical-align: inherit; margin-right:10px;"><b>Ou prossiga com:</b></font>
                         </font>
                     </h4>
                     <img
                         src="data:image/png;base64,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">
                     <h4 class="card-text-2" style="color: black;font-size:16px;">
                         <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;"><b>Não tem conta</b></font><br>
-                            <a href="registrar.html">
-                                <font style="vertical-align: inherit;"><b>Registre-se</b></font>
+                            <font style="vertical-align: inherit;"><b>Já tem conta</b></font><br>
+                            <a href="loginpage.html">
+                                <font style="vertical-align: inherit;"><b>Logar-se</b></font>
                             </a>
                         </font>
                     </h4>

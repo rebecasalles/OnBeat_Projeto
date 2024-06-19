@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link javascript src="script.js">
   <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="shortcut icon" href="/Arquivos/favicon_io (3)/favicon.ico" type="image/x-icon">
   <style>
     @font-face {
       font-family: "Roboto";
@@ -71,6 +72,7 @@
     }
   </style>
   <title>OnBeat-Home</title>
+
 </head>
 
 <body>
@@ -91,7 +93,7 @@
         style="font: 30px bolder; margin-left:900px;color: #593196;">
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="#">
+            <a class="nav-link active" href="index.html">
               <font style="vertical-align: inherit;">
                 <font style="vertical-align: inherit;font-weight: extrabold;color: #593196;">Início
                 </font>
@@ -103,14 +105,14 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="musicas.html">
               <font style="vertical-align: inherit;">
                 <font style="vertical-align: inherit;">Músicas</font>
               </font>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="podcasts.html">
               <font style="vertical-align: inherit;">
                 <font style="vertical-align: inherit;">Podcasts</font>
               </font>
@@ -124,7 +126,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="comunidades.html">
               <font style="vertical-align: inherit;">
                 <font style="vertical-align: inherit;">Comunidades</font>
               </font>
@@ -132,46 +134,9 @@
           </li>
         </ul>
         <form class="d-flex" style="margin-right: 100px;">
-          <a href="loginpage.html"> <img style="margin-bottom: 0px;" 
+          <a href="loginpage.html"> <img style="margin-bottom: 0px;"
               src="data:image/png;base64,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">
           </a>
-          
-          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="modal">Open Modal</button>
-            <div class="modal" id="modal">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">
-                    <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">Título modal</font>
-                    </font>
-                  </h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar">
-                    <span aria-hidden="true"></span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <p>
-                    <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">O texto do corpo modal vai aqui.</font>
-                    </font>
-                  </p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-primary">
-                    <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">Salvar alterações</font>
-                    </font>
-                  </button>
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                    <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">Fechar</font>
-                    </font>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
         </form>
       </div>
     </div>
@@ -205,12 +170,12 @@
       <img src="/Arquivos/Artistas-em-evidencia.PNG" style="margin-top: 10px;margin-left: 650px;">
       <br>
       <br>
-      <button type="button" class="btn btn-primary btn-lg"
-        style="margin-left: 720px;margin-top:-20px;padding-top: 3px; background-color: #a289da;border-radius: 5px;font-weight: bold;">
-        <font style="vertical-align: inherit;">
-          <font style="vertical-align: inherit;">Torne-se um artista em evidência também </font>
-        </font>
-      </button>
+      <a href="https://www.patreon.com/" target="_blank"><button type="button" class="btn btn-primary btn-lg"
+          style="margin-left: 720px;margin-top:-20px;padding-top: 3px; background-color: #a289da;border-radius: 5px;font-weight: bold;">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Torne-se um artista em evidência também </font>
+          </font>
+        </button></a>
     </div>
     <div class="parte-artistas-em-alta">
       <h1 style="font-size: 50px;padding-top: 30px;">
@@ -243,12 +208,13 @@
         style="margin-left: 600px;margin-top: 20px; height: 350px;width: auto;"> <img
         src="/Arquivos/Patreon-suporte.png"
         style="margin: 180px 0px 0px -20px;height: 100px;width: auto;position: absolute;">
-      <a href="https//www.instagram.com/onbeat"><img style="margin-left: 90px;margin-top: -50px;"
-          href="https//www.instagram.com/onbeat"
+      <a href="https//www.instagram.com/"><img style="margin-left: 90px;margin-top: -50px;"
           src="data:image/png;base64,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">
       </a>
-      <img style="margin-left: 30px;margin-top: -50px;"
-        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAA65JREFUaEPtmV+oVUUUxn9fgphaEEhpIoaKZgaGD0oYpPgHC8vQCCWxIkFBEBRBoYckSepB9MEHo3pQSLA0KzQQREWKKBG0SNBEn9QsXwS1P0bLvWAO3K7n7NmzZ1/jwhm43IdZ65vvmzV7zVpzRD8f6uf86Qr4vyPYjUA3Apk70D1CKRtoZiOBdcAkYCIwDPgZOA58IulkCp7bdoyAmU2QdDYVsJO9mc0pSO8BHirB/AJYIem3lo2ZrQCek/RSO78yAZ8CgyXNzxVhZquK3d5eEecSsB+YUvyfDAwB5kg6XFmAmT0IXA8OX3ZSX4WQmTmJU1VsO9iskbTN58zMN/RWT7u2ETCzqUXYvu9h+LmkRXVImNmZcN5T3Z3oZuAqMNP5S1raG6STACe7t5fxD8CylO/CzPzc+nHIHT8B0yT9UVXAs8CxNqv+DbwDvC/pnxgrM3sPWB+zi8x7lpoh6VrKNzAWOF8CfDpE48eyxc3MN8E3o+74Dpgr6UYngLIs5MqfiKzs+XsfsLvdDpmZh/7JuuyBeZIOlfmXCXgeOJiw+DfhUvLIOfFfgB2eAhMwepvOknSkloCQtj4DXs4gkOs6VdKJZAFmNh0YAxwAPgIW5jKp6f+opCt1BPgt2KpLzhVnfHxNAjluNyQ9EAPodA8MBP6KOffx/LdF+fBMbI2yj9gvoLYFVAy0oXm/azbEsMoE+LHxMmBADKSP5mdKaneZ/me50obGzN4urDf2EcEy2N8lPVxl3WhHZmbLgQ+KEuK+KoAN2Wwpbl9vfKIjKiDcB16dri4up1ejiM0YjJF0sQpUVICZeSaYHcC8DXylCnCGzR5Ji6v6VxEwuijcLtyjI/Sv118pJXtUQDhCu4ElVXclw26rpLUp/lUFeEbwDu2xFPBEW39AeKrI/X+m+FUSEKLg5D0v+5Fqeni9P0WSV7BJo7KAFqqZvQG8DowqyuXhRXd2f9KK7Y0XSPqqDk6ygB5CnPxO75jqLBx8bnu5IunruhjJAsKTy5uhNx5ad2HgZlHxviDpaAZG9R84zGxeKO5eAwblLAp4ib5QkretWeOuCIQnwBcBf4F4pCgjRgBPN3TWnexmSW9lse7h3KkfcNKbAD8qTQx/z/kYeFfSr00AtjBi1ai/Hnsxt7Jm+vTmfhfwoaTWU2WT/JO+AU+bj4enFu8VxgETgjB/kL0cXiK8FfW/E73fMRtlHsCSs1BfkMjB7ArI2b0mfLsRaGIXczC6EcjZvSZ8+30E7gDTC/YxA8JcdAAAAABJRU5ErkJggg==">
+
+      <a href="https//www.twitter.com/"><img style="margin-left: 30px;margin-top: -50px;"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAA65JREFUaEPtmV+oVUUUxn9fgphaEEhpIoaKZgaGD0oYpPgHC8vQCCWxIkFBEBRBoYckSepB9MEHo3pQSLA0KzQQREWKKBG0SNBEn9QsXwS1P0bLvWAO3K7n7NmzZ1/jwhm43IdZ65vvmzV7zVpzRD8f6uf86Qr4vyPYjUA3Apk70D1CKRtoZiOBdcAkYCIwDPgZOA58IulkCp7bdoyAmU2QdDYVsJO9mc0pSO8BHirB/AJYIem3lo2ZrQCek/RSO78yAZ8CgyXNzxVhZquK3d5eEecSsB+YUvyfDAwB5kg6XFmAmT0IXA8OX3ZSX4WQmTmJU1VsO9iskbTN58zMN/RWT7u2ETCzqUXYvu9h+LmkRXVImNmZcN5T3Z3oZuAqMNP5S1raG6STACe7t5fxD8CylO/CzPzc+nHIHT8B0yT9UVXAs8CxNqv+DbwDvC/pnxgrM3sPWB+zi8x7lpoh6VrKNzAWOF8CfDpE48eyxc3MN8E3o+74Dpgr6UYngLIs5MqfiKzs+XsfsLvdDpmZh/7JuuyBeZIOlfmXCXgeOJiw+DfhUvLIOfFfgB2eAhMwepvOknSkloCQtj4DXs4gkOs6VdKJZAFmNh0YAxwAPgIW5jKp6f+opCt1BPgt2KpLzhVnfHxNAjluNyQ9EAPodA8MBP6KOffx/LdF+fBMbI2yj9gvoLYFVAy0oXm/azbEsMoE+LHxMmBADKSP5mdKaneZ/me50obGzN4urDf2EcEy2N8lPVxl3WhHZmbLgQ+KEuK+KoAN2Wwpbl9vfKIjKiDcB16dri4up1ejiM0YjJF0sQpUVICZeSaYHcC8DXylCnCGzR5Ji6v6VxEwuijcLtyjI/Sv118pJXtUQDhCu4ElVXclw26rpLUp/lUFeEbwDu2xFPBEW39AeKrI/X+m+FUSEKLg5D0v+5Fqeni9P0WSV7BJo7KAFqqZvQG8DowqyuXhRXd2f9KK7Y0XSPqqDk6ygB5CnPxO75jqLBx8bnu5IunruhjJAsKTy5uhNx5ad2HgZlHxviDpaAZG9R84zGxeKO5eAwblLAp4ib5QkretWeOuCIQnwBcBf4F4pCgjRgBPN3TWnexmSW9lse7h3KkfcNKbAD8qTQx/z/kYeFfSr00AtjBi1ai/Hnsxt7Jm+vTmfhfwoaTWU2WT/JO+AU+bj4enFu8VxgETgjB/kL0cXiK8FfW/E73fMRtlHsCSs1BfkMjB7ArI2b0mfLsRaGIXczC6EcjZvSZ8+30E7gDTC/YxA8JcdAAAAABJRU5ErkJggg==">
+      </a>
       <h6 style="text-align: center;font-size: 14px;margin-top: -25px;">Direitos autorais (c) OnBeat de 2024. Todos os
         direitos reservados. Este produto é protegido por direitos autorais e
         distribuído sob licenças que restringem cópia, distribuição e descompilação.</h6>
